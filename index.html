@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HopeBlog</title><meta name="author" content="HopeLight"><meta name="copyright" content="HopeLight"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website"><meta property="og:title" content="HopeBlog"><meta property="og:url" content="http://example.com/index.html"><meta property="og:site_name" content="HopeBlog"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp"><meta property="article:author" content="HopeLight"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/icon.webp"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/favicon-16x16.png"><link rel="mask-icon" href="/img/siteicon/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HopeLight/HopeLight.github.io@1.0/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload='this.media="all"'><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"这篇文章在🕐","messageNext":"天前编写的啦，可能现在不能用了噢~。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制到你的粘贴板啦~👌',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"天太黑啦,设置到黑夜模式，保护你的眼睛🌛","night_to_day":"天亮啦，设置到白天模式，有更佳的体验呢🔆","bgLight":"#9599e261","bgDark":"#9599e261 ","position":"bottom-center"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={isPost:!1,isHome:!0,isHighlightShrink:!1,isToc:!1,postUpdate:"2021-07-12 02:40:22"}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HopeLight/css@3.0/demo.css" media="defer" onload='this.media="all"'><style>@keyframes realImg{0%{filter:blur(15px)}100%{filter:blur(0)}}.post_bg{filter:blur(15px)}.post_bg.entered.loaded{filter:blur(0);will-change:opacity;animation:realImg .5s linear}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" media="defer" onload='this.media="all"'><script language="JavaScript"><!--
+function killErrors() {
+    return true;
+}
+window.onerror = killErrors;
+let string2 = () => {
+    /*
+    ___ ___                     __________.__                 
+    /   |     ____ ______   __________     |   ____   ____  
+   /    ~    /  _ \____ _/ __ |    |  _/  |  /  _  / ___ 
+       Y    (  <_> )  |_> >  ___/|    |     |_(  <_> ) /_/  >
+    ___|_  / ____/|   __/ ___  >______  /____/____/___  / 
+          /        |__|        /       /           /_____/       
+    */                  
+}
+Function.prototype.makeMulti = function () {
+    let l = new String(this);
+    // new String()生成的是一个字符串对象
+    l = l.substring(l.indexOf("/*") + 3, l.lastIndexOf("*/"))
+    return l
+}
+console.log(string2.makeMulti());
+// --></script><style>#pagination .pagination{display:flex;justify-content:space-between}#footer_number{order:2;display:inline-block;margin:0 .2rem;min-width:1.2rem;height:1.2rem;text-align:center;line-height:1.2rem;cursor:pointer;color:#99a9bf;text-decoration:none;word-wrap:break-word;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;-ms-transition:all .2s;transition:all .2s;overflow-wrap:break-word;margin:32px;font-weight:600;font-size:16px}.extend.next{order:3}#pagination{overflow:inherit}#pagination>.pagination>.page-number,#pagination>.pagination>.space{display:none}#pagination>.pagination>.extend.next:before{content:'下一页'}#pagination>.pagination>.extend.prev:after{content:'上一页'}#pagination>.pagination>.extend{margin:16px 0}#pagination>.pagination>.extend.next{font-weight:600;text-align:right;padding:16px;border-radius:8px;background:var(--card-bg);box-shadow:var(--card-box-shadow)}#pagination>.pagination>.extend.prev{font-weight:600;text-align:right;padding:16px;border-radius:8px;background:var(--card-bg);box-shadow:var(--card-box-shadow)}#pagination>.pagination>.extend:hover{box-shadow:var(--card-hover-box-shadow)}</style><style>#nprogress{pointer-events:none}#nprogress .bar{background:var(--btn-bg);position:fixed;z-index:3000;top:0;left:0;width:100%;height:100%}#nprogress .peg{display:block;position:absolute;right:0;width:100px;height:100%;opacity:1;-webkit-transform:rotate(3deg) translate(0,-4px);-ms-transform:rotate(3deg) translate(0,-4px);transform:rotate(3deg) translate(0,-4px)}#nprogress .spinner{display:block;position:fixed;z-index:3000;top:15px;right:15px}#nprogress .spinner-icon{width:18px;height:18px;box-sizing:border-box;border:solid 2px transparent;border-top-color:#29d;border-left-color:#29d;border-radius:50%;-webkit-animation:nprogress-spinner .4s linear infinite;animation:nprogress-spinner .4s linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}#loading-bar-wrapper{position:fixed;width:100px;top:70px;left:50%;transform:translateX(-50%);height:8px;border-radius:8px;z-index:2000;background:0 0}#loading-bar-wrapper.nprogress-custom-parent{background:var(--color-card);box-shadow:var(--card-box-shadow)}.loading-circle{display:none;height:100%;width:100%;position:fixed;top:0;left:0;z-index:999999;background-color:rgba(250,250,250,.9)}.loading-circle img{width:280px;height:210px;position:relative;top:45%;left:50%;margin-left:-140px;margin-top:-105px}#loader-circle{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#ff5a5a;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}#loader-circle:before{content:"";position:absolute;top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#5af33f;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#loader-circle:after{content:"";position:absolute;top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#6dc9ff;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-webkit-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-o-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-moz-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hopelight/menu/index.css"><style>#body-wrap #s-top.show.hl{background:var(--hope-button);color:#fff;box-shadow:0 1px 2px 0 rgb(0 0 0/10%)}@media screen and (min-width:768px){#body-wrap #s-top:hover{transform:scale(1.2);border-radius:25%;background:var(--hope-button);color:#fff}}@media screen and (min-width:768px){#body-wrap #s-top:hover,#body-wrap #s-top:hover.hl{box-shadow:0 2px 4px 0 rgb(0 0 0 / 10%),0 4px 8px 0 rgb(0 0 0 / 10%),0 8px 16px 0 rgb(0 0 0 / 10%)}}#body-wrap #s-top.show{transform:translateY(0) scale(1)}#body-wrap #s-top{transition:all .6s ease;-moz-transition:all .6s ease;-webkit-transition:all .6s ease;-o-transition:all .6s ease;z-index:9;position:fixed;width:48px;height:48px;line-height:48px;border-radius:100%;bottom:32px;right:32px;transform:translateY(100px) scale(0);transform-origin:bottom;color:var(--color-text)}#go-up{display:none!important}</style><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp" onerror='onerror=null,src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/load.gif"' alt="avatar"></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang1"></i> <span>文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian1"></i> <span>文章轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tag"></i> <span>文章标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i> <span>文章分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-icon"></i> <span>生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Dynamic/"><i class="fa-fw iconfont icon-dongtai"></i> <span>动态</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-qinyou"></i> <span>友链</span></a></li><li><a class="site-page child" href="/friends/"><i class="fa-fw iconfont icon-sr_pengyouquan"></i> <span>朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-gengduo"></i> <span>更多</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-dianying"></i> <span>追番</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HopeBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i> <span>搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang1"></i> <span>文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian1"></i> <span>文章轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tag"></i> <span>文章标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i> <span>文章分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-icon"></i> <span>生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Dynamic/"><i class="fa-fw iconfont icon-dongtai"></i> <span>动态</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-qinyou"></i> <span>友链</span></a></li><li><a class="site-page child" href="/friends/"><i class="fa-fw iconfont icon-sr_pengyouquan"></i> <span>朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-gengduo"></i> <span>更多</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-dianying"></i> <span>追番</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">HopeBlog</h1><div id="site_social_icons"><a class="social-icon" href="https://gitee.com/hopedlight" target="_blank" title="Gitee"><i class="iconfont icon-gitee-fill-round"></i></a><a class="social-icon" href="https://music.163.com/#/my/m/music/playlist?id=457599706" target="_blank" title="网易云"><i class="iconfont icon-yinle"></i></a><a class="social-icon" href="https://space.bilibili.com/406771870" target="_blank" title="B站"><i class="iconfont icon-bilibili-line"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="bbTimeList container" id="bbTimeList"><i class="fas iconfont icon-airudiantubiaohuizhi-zhuanqu_zixundongtai" onclick='location="/Dynamic/"' title="短文" style="font-size:1rem;margin-top:.2rem"></i><div class="swiper-container" id="bbtalk"><div class="swiper-wrapper" id="bber-talk" onclick='location="/Dynamic/"'></div></div><i class="fas iconfont icon-B" onclick='location="/Dynamic/"' title="查看全文" style="font-size:1rem;margin-top:.15rem"></i></div><div class="js-pjax"><script>var bbShortApiUrl="https://7461-talks-6gkb0imh29246092-1305220935.tcb.qcloud.la/json/bber.json?sign=9936658598dbfac09c6c523581b99303&t=1623977085"</script><script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" data-pjax=""></script><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js@2.0/showbb_in_index.js" data-pjax="" defer></script></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有"><img class="post_bg" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/background/Hexo.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="Hexo博客搭建的从无到有"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有">Hexo博客搭建的从无到有</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-13T22:56:00.000Z" title="发表于 2021-06-14 06:56:00">2021-06-14</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-13T22:56:00.000Z" title="更新于 2021-06-14 06:56:00">2021-06-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/">Hexo🍔</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/Github%F0%9F%8C%AD/">Github🌭</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/Github%F0%9F%8C%AD/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%F0%9F%A7%87/">搭建环境🧇</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/Github%F0%9F%8C%AD/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%F0%9F%A7%87/%E9%83%A8%E7%BD%B2%F0%9F%A5%99/">部署🥙</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Hexo/">Hexo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E9%83%A8%E7%BD%B2/">部署</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%8E%AF%E5%A2%83/">环境</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2021/06/14/HexoAbout/#post-comment"></a> <span class="article-meta-label">条评论</span></span></div><div class="content">嘿~还不赶紧快过来看看？这么详细的教程噢~</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上"><img class="post_bg" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@3.0/background/Centos.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="将Hexo部署到Centos系统上"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上">将Hexo部署到Centos系统上</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-06T22:56:00.000Z" title="发表于 2021-06-07 06:56:00">2021-06-07</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-11T22:56:00.000Z" title="更新于 2021-07-12 06:56:00">2021-07-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/">Hexo🍔</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/%E6%9C%8D%E5%8A%A1%E5%99%A8%F0%9F%A5%AD/">服务器🥭</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/%E6%9C%8D%E5%8A%A1%E5%99%A8%F0%9F%A5%AD/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%F0%9F%A7%87/">搭建环境🧇</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Hexo%F0%9F%8D%94/%E6%9C%8D%E5%8A%A1%E5%99%A8%F0%9F%A5%AD/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%F0%9F%A7%87/%E9%83%A8%E7%BD%B2%F0%9F%A5%99/">部署🥙</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Hexo/">Hexo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2021/06/07/HexoDeploy/#post-comment"></a> <span class="article-meta-label">条评论</span></span></div><div class="content">更新了一种有趣的搭建方式,还不来看看嘛？</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/load.gif"' alt="avatar"><div class="author-info__name">HopeLight</div><div class="author-info__description"><div class="author-info__description">人生若只如初见，何事秋风悲画扇。等闲变却故人心，却道故心人易变。骊山语罢清宵半，泪雨霖铃终不怨。何如薄幸锦衣郎，比翼连枝当日愿。</div></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/hopedlight" target="_blank" title="Gitee"><i class="iconfont icon-gitee-fill-round"></i></a><a class="social-icon" href="https://music.163.com/#/my/m/music/playlist?id=457599706" target="_blank" title="网易云"><i class="iconfont icon-yinle"></i></a><a class="social-icon" href="https://space.bilibili.com/406771870" target="_blank" title="B站"><i class="iconfont icon-bilibili-line"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"></div><div class="announcement_content"></div><blockquote><p>"如烟往事俱忘却"<br>"心底无私天地宽。<br>--陶铸"</p></blockquote><img src="https://cdn.jsdelivr.net/gh/HopeLight/photo/Label/msg-removebg.png"></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有"><img data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/background/Hexo.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="Hexo博客搭建的从无到有"></a><div class="content"><a class="title" href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有">Hexo博客搭建的从无到有</a><time datetime="2021-06-13T22:56:00.000Z" title="发表于 2021-06-14 06:56:00">2021-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上"><img data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@3.0/background/Centos.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="将Hexo部署到Centos系统上"></a><div class="content"><a class="title" href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上">将Hexo部署到Centos系统上</a><time datetime="2021-06-06T22:56:00.000Z" title="发表于 2021-06-07 06:56:00">2021-06-07</time></div></div></div></div><div class="card-widget card-tags"><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size:1.5em;color:#99a9bf">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size:1.5em;color:#99a9bf">博客</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size:1.5em;color:#99a9bf">教程</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size:1.1em;color:#999">服务器</a> <a href="/tags/%E7%8E%AF%E5%A2%83/" style="font-size:1.1em;color:#999">环境</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size:1.1em;color:#999">部署</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">📔文章总数量 :</div><div class="item-count">2个</div></div><div class="webinfo-item"><div class="item-name">📚文章总字数 :</div><div class="item-count">35.6k</div></div><div class="webinfo-item"><div class="item-name">⏰博客运行时间 :</div><div class="item-count" id="runtimeshow" data-publishdate="2021-03-09T16:00:00.000Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="请输入文章关键字" type="text"></div></div></div><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/utils.js"></script><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/local-search.js"></script><div class="js-pjax"><script>(() => { 
+  const getCommentUrl = () => {
+    const eleGroup = document.querySelectorAll('#recent-posts .article-title')
+    let urlArray = []
+    eleGroup.forEach(i=>{
+      urlArray.push(i.getAttribute('href'))
+    })
+    return urlArray
+  }
+
+  const getCount = () => {
+    const runTwikoo = () => {
+      twikoo.getCommentsCount({
+        envId: 'https://twikoo.ranas.cn/',
+        region: '',
+        urls: getCommentUrl(),
+        includeReply: false
+      }).then(function (res) {
+        document.querySelectorAll('#recent-posts .twikoo-count').forEach((item,index) => {
+          item.innerText = res[index].count
+        })
+      }).catch(function (err) {
+        console.log(err)
+      })
+    }
+
+      if (typeof twikoo === 'object') {
+        runTwikoo()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/twikoo@1.4.0-alpha.5/dist/twikoo.all.min.js').then(runTwikoo)
+      }
+  }
+
+  window.pjax ? getCount() : window.addEventListener('load', getCount)
+
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful=!0,POWERMODE.shake=!1,POWERMODE.mobile=!1,document.body.addEventListener("input",POWERMODE)</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/Dynamic/"]):not([href="/friends/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div class="app-refresh" id="app-refresh" style="position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease"><div class="app-refresh-wrap" style="display:flex;color:#fff;height:100%;align-items:center;justify-content:center"><label>HopeBlog 🛫 | 修复了新的BUG 🧳</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color:#fff;text-decoration:underline;cursor:pointer">点击查看新的BUG🛎️</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: 'HopeBlog 🛫 | 修复了新的BUG 🧳',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '点击查看新的BUG🛎️',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#49b1f5' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script></div><script data-pjax>function hope_light_error_killer_injector_config(){var e=document.getElementById("");console.log("已挂载hope_light_error_killer"),e.insertAdjacentHTML("afterbegin","undefined")}document.getElementById("")&&(location.pathname,1)&&hope_light_error_killer_injector_config()</script><script data-pjax>function hope_light_footer_injector_config(){var e=document.getElementsByClassName("pagination")[0];console.log("已挂载hope_light_footer"),e.insertAdjacentHTML("afterbegin",'<div id="footer_number"></div>')}document.getElementsByClassName("pagination")[0]&&(location.pathname,1)&&hope_light_footer_injector_config()</script><script data-pjax>if(document.getElementsByClassName("page-number")[document.getElementsByClassName("page-number").length-1]){var all_page_num=document.getElementsByClassName("page-number")[document.getElementsByClassName("page-number").length-1].innerHTML,this_page_num=document.getElementsByClassName("page-number current")[0].innerText,page_number_display=this_page_num+"/"+all_page_num;document.getElementById("footer_number").innerText=page_number_display}</script><script data-pjax>function hope_light_loader_injector_config(){var e=document.getElementById("body-wrap");console.log("已挂载hope_light_loader"),e.insertAdjacentHTML("afterbegin",'<div id="loading-bar-wrapper">')}document.getElementById("body-wrap")&&(location.pathname,1)&&hope_light_loader_injector_config()</script><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed:100})</script><script data-pjax>window.ShowLoading=function(){NProgress.start()},window.HideLoading=function(){NProgress.done()},document.addEventListener("pjax:send",window.ShowLoading),document.addEventListener("pjax:success",window.HideLoading),document.addEventListener("pjax:error",window.HideLoading)</script><script data-pjax>function hope_light_menu_injector_config(){var e=document.getElementById("");console.log("已挂载hope_light_menu"),e.insertAdjacentHTML("afterbegin","undefined")}document.getElementById("")&&(location.pathname,1)&&hope_light_menu_injector_config()</script><div class="aplayer-list" style="display:none"><li></li></div><script data-pjax src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script data-pjax>var hopelight_menu_append_div = (parent, text) => {
+    if (typeof text === 'string') {
+        var temp = document.createElement('div');
+        temp.innerHTML = text;
+        // 防止元素太多 进行提速
+        var frag = document.createDocumentFragment();
+        while (temp.firstChild) {
+            frag.appendChild(temp.firstChild);
+        }
+        parent.appendChild(frag);
+    } else {
+        parent.appendChild(text);
+    }
+};
+var  hopelight_switchDarkMode=() => { // Switch Between Light And Dark Mode
+    var darkmode_text = document.getElementById('darkmode_switchbutton_text');
+    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    if (nowMode === 'light') {
+        darkmode_text.innerHTML='开灯';
+        activateDarkMode();
+        saveToLocal.set('theme', 'dark', 2);
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night);
+    } else {
+        darkmode_text.innerHTML='关灯';
+        activateLightMode();
+        saveToLocal.set('theme', 'light', 2);
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day);
+    }
+    // handle some cases
+    typeof utterancesTheme === 'function' && utterancesTheme();
+    typeof FB === 'object' && window.loadFBComment();
+    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200);
+};
+
+var hopelight_nav_bar = document.getElementById('nav');
+var search_button_origin = document.getElementById('search-button');
+search_button_origin.remove();
+var hopelight_temple = `<div id="hopelight_plus_menu" class="hopelight_plus_menu">
+
+<div id="darkmode_navswitch">
+<a class="site-page social-icon darkmode_switchbutton" onclick="hopelight_switchDarkMode()" title="模式切换" data-pjax-state="">
+<i class="fas fa-adjust"></i>
+<span  id = 'darkmode_switchbutton_text'></span>
+</a></div>
+
+<div id="search-button">
+<a class="site-page social-icon search">
+<i class="fas fa-search fa-fw"></i>
+<span id = 'search_text'>搜索</span>
+</a></div>
+<div id="hopelight_menu_music_player">
+<div id="aplayer-uxAIfEUs" 
+class="aplayer aplayer-tag-marker meting-tag-marker" 
+data-id="6808803405" 
+data-lrctype="none" 
+data-server="netease" 
+data-type="playlist" 
+data-mode="circulation" 
+data-autoplay="false" 
+data-mutex="true" 
+data-listmaxheight="340px" 
+data-preload="auto" 
+data-listfolded="true" 
+data-theme="#3F51B5"></div>
+<div class="music_button" id="pre-button">
+<a class="site-page social-icon per" onclick="aplayers[0].skipBack();hopelight_music_play_new()">
+<i class="fas fa-step-backward fa-fw"></i>
+</a></div>
+<div class="music_button" id="play-button" >
+<a class="site-page social-icon hopelight_music_play" onclick="hopelight_music_play()"><i class="fas fa-play fa-fw"></i></a></div>
+<div class="music_button" id="next-button">
+<a class="site-page social-icon next" onclick="aplayers[0].skipForward();hopelight_music_play_new()">
+<i class="fas fa-step-forward fa-fw"></i>
+</a></div>
+</div>
+
+
+</div>`;
+hopelight_menu_append_div(hopelight_nav_bar,hopelight_temple);
+
+window.addEventListener('load', () => {
+  function search (path) {
+    fetch(GLOBAL_CONFIG.root + path)
+      .then(response => response.text())
+      .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+      .then(data => {
+        const datas = [...data.querySelectorAll('entry')].map(function (item) {
+          return {
+            title: item.querySelector('title').textContent,
+            content: item.querySelector('content').textContent,
+            url: item.querySelector('url').textContent
+          }
+        })
+
+        const $input = document.querySelector('#local-search-input input')
+        const $resultContent = document.getElementById('local-search-results')
+        $input.addEventListener('input', function () {
+          let str = '<div class="search-result-list">'
+          const keywords = this.value.trim().toLowerCase().split(/[\s]+/)
+          $resultContent.innerHTML = ''
+          if (this.value.trim().length <= 0) return
+          let count = 0
+          // perform local searching
+          datas.forEach(function (data) {
+            let isMatch = true
+            if (!data.title || data.title.trim() === '') {
+              data.title = 'Untitled'
+            }
+            let dataTitle = data.title.trim().toLowerCase()
+            const dataContent = data.content.trim().replace(/<[^>]+>/g, '').toLowerCase()
+            const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
+            let indexTitle = -1
+            let indexContent = -1
+            let firstOccur = -1
+            // only match artiles with not empty titles and contents
+            if (dataTitle !== '' || dataContent !== '') {
+              keywords.forEach(function (keyword, i) {
+                indexTitle = dataTitle.indexOf(keyword)
+                indexContent = dataContent.indexOf(keyword)
+                if (indexTitle < 0 && indexContent < 0) {
+                  isMatch = false
+                } else {
+                  if (indexContent < 0) {
+                    indexContent = 0
+                  }
+                  if (i === 0) {
+                    firstOccur = indexContent
+                  }
+                }
+              })
+            } else {
+              isMatch = false
+            }
+
+            // show search results
+            if (isMatch) {
+              const content = data.content.trim().replace(/<[^>]+>/g, '')
+              if (firstOccur >= 0) {
+                // cut out 130 characters
+                let start = firstOccur - 30
+                let end = firstOccur + 100
+
+                if (start < 0) {
+                  start = 0
+                }
+
+                if (start === 0) {
+                  end = 100
+                }
+
+                if (end > content.length) {
+                  end = content.length
+                }
+
+                let matchContent = content.substring(start, end)
+
+                // highlight all keywords
+                keywords.forEach(function (keyword) {
+                  const regS = new RegExp(keyword, 'gi')
+                  matchContent = matchContent.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+                  dataTitle = dataTitle.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+                })
+
+                str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
+                count += 1
+
+                if (dataContent !== '') {
+                  str += '<p class="search-result">' + matchContent + '...</p>'
+                }
+              }
+              str += '</div>'
+            }
+          })
+          if (count === 0) {
+            str += '<div id="local-search__hits-empty">' + GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/, this.value.trim()) +
+              '</div>'
+          }
+          str += '</div>'
+          $resultContent.innerHTML = str
+          window.pjax && window.pjax.refresh($resultContent)
+        })
+      })
+  }
+    let loadFlag = false;
+    const openSearch = function () {
+        document.body.style.cssText = 'width: 100%;overflow: hidden';
+        document.querySelector('#local-search .search-dialog').style.display = 'block';
+        document.querySelector('#local-search-input input').focus();
+        btf.fadeIn(document.getElementById('search-mask'), 0.5);
+        if (!loadFlag) {
+            search(GLOBAL_CONFIG.localSearch.path);
+            loadFlag = true;
+        }
+        // shortcut: ESC
+        document.addEventListener('keydown', function f (event) {
+            if (event.code === 'Escape') {
+                closeSearch();
+                document.removeEventListener('keydown', f);
+            }
+        })
+    };
+
+    const closeSearch = function () {
+        document.body.style.cssText = "width: '';overflow: ''";
+        const $searchDialog = document.querySelector('#local-search .search-dialog');
+        $searchDialog.style.animation = 'search_close .5s';
+        setTimeout(() => { $searchDialog.style.cssText = "display: none; animation: ''" }, 500);
+        btf.fadeOut(document.getElementById('search-mask'), 0.5);
+    };
+
+    // click function
+    const searchClickFn = () => {
+        document.querySelector('#search-button > .search').addEventListener('click', openSearch);
+        document.getElementById('search-mask').addEventListener('click', closeSearch);
+        document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch);
+    }
+
+    searchClickFn()
+})
+
+var darkmode_text = document.getElementById('darkmode_switchbutton_text');
+var hopelight_nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+if (hopelight_nowMode === 'light') {
+    darkmode_text.innerHTML='关灯'
+} else {
+    darkmode_text.innerHTML='开灯'
+}
+function hopelight_music_play(){
+    aplayers[0].toggle();
+    if (document.getElementsByClassName('hopelight_music_play')){
+    if (document.getElementsByClassName('hopelight_music_play')[0].innerHTML === '<i class="fas fa-play fa-fw"></i>'){
+        document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-pause fa-fw"></i>';
+        document.getElementsByClassName('aplayer-pic')[0].classList.remove("music_spin_pause");
+         document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin");
+    }else {
+        document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-play fa-fw"></i>';
+        document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin_pause");
+        document.getElementsByClassName('aplayer-pic')[0].classList.remove("music_spin");
+    }
+    }
+    
+
+
+}
+function hopelight_music_play_new(){
+    aplayers[0].play();
+    if (document.getElementsByClassName('hopelight_music_play')){
+    document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin");
+    document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-pause fa-fw"></i>';
+}}</script><script data-pjax>function hope_light_totop_injector_config(){var o=document.getElementById("body-wrap");console.log("已挂载hope_light_totop"),o.insertAdjacentHTML("afterbegin",'<a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:btf.scrollToDest(0, 500)"></a>')}document.getElementById("body-wrap")&&(location.pathname,1)&&hope_light_totop_injector_config()</script><script data-pjax>window.onscroll=function(){var e=document.documentElement.scrollTop||document.body.scrollTop;document.getElementById("s-top")&&(10<e?document.getElementById("s-top").classList.add("show"):document.getElementById("s-top").classList.remove("show"))};var scrollFunc=function(e){(e=e||window.event).wheelDelta?(0<e.wheelDelta&&document.getElementById("s-top").classList.add("hl"),e.wheelDelta<0&&document.getElementById("s-top").classList.remove("hl")):e.detail&&(0<e.detail&&document.getElementById("s-top").classList.add("hl"),e.detail<0&&document.getElementById("s-top").classList.remove("hl"))};document.addEventListener&&document.addEventListener("DOMMouseScroll",scrollFunc,!1),window.onmousewheel=document.onmousewheel=scrollFunc</script></body></html>
