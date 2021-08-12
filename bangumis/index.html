@@ -1,0 +1,541 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>追番列表 | HopeBlog</title><meta name="author" content="HopeLight"><meta name="copyright" content="HopeLight"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content=".bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;clear:b"><meta property="og:type" content="website"><meta property="og:title" content="追番列表"><meta property="og:url" content="http://example.com/bangumis/index.html"><meta property="og:site_name" content="HopeBlog"><meta property="og:description" content=".bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;clear:b"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp"><meta property="article:author" content="HopeLight"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/icon.webp"><link rel="canonical" href="http://example.com/bangumis/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/favicon-16x16.png"><link rel="mask-icon" href="/img/siteicon/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HopeLight/HopeLight.github.io/css@5.0/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload='this.media="all"'><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"这篇文章在🕐","messageNext":"天前编写的啦，可能现在不能用了噢~。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制到你的粘贴板啦~👌',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"天太黑啦,设置到黑夜模式，保护你的眼睛🌛","night_to_day":"天亮啦，设置到白天模式，有更佳的体验呢🔆","bgLight":"#9599e261","bgDark":"#9599e261 ","position":"bottom-center"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={isPost:!1,isHome:!1,isHighlightShrink:!1,isToc:!1,postUpdate:"2021-08-13 05:49:16"}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HopeLight/css@6.0/demo.css" media="defer" onload='this.media="all"'><style>@keyframes realImg{0%{filter:blur(15px)}100%{filter:blur(0)}}.post_bg{filter:blur(15px)}.post_bg.entered.loaded{filter:blur(0);will-change:opacity;animation:realImg .5s linear}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" media="defer" onload='this.media="all"'><script language="JavaScript"><!--
+function killErrors() {
+    return true;
+}
+window.onerror = killErrors;
+let string2 = () => {
+    /*
+    ___ ___                     __________.__                 
+    /   |     ____ ______   __________     |   ____   ____  
+   /    ~    /  _ \____ _/ __ |    |  _/  |  /  _  / ___ 
+       Y    (  <_> )  |_> >  ___/|    |     |_(  <_> ) /_/  >
+    ___|_  / ____/|   __/ ___  >______  /____/____/___  / 
+          /        |__|        /       /           /_____/       
+    */                  
+}
+Function.prototype.makeMulti = function () {
+    let l = new String(this);
+    // new String()生成的是一个字符串对象
+    l = l.substring(l.indexOf("/*") + 3, l.lastIndexOf("*/"))
+    return l
+}
+console.log(string2.makeMulti());
+// --></script><style>#pagination .pagination{display:flex;justify-content:space-between}#footer_number{order:2;display:inline-block;margin:0 .2rem;min-width:1.2rem;height:1.2rem;text-align:center;line-height:1.2rem;cursor:pointer;color:#99a9bf;text-decoration:none;word-wrap:break-word;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;-ms-transition:all .2s;transition:all .2s;overflow-wrap:break-word;margin:32px;font-weight:600;font-size:16px}.extend.next{order:3}#pagination{overflow:inherit}#pagination>.pagination>.page-number,#pagination>.pagination>.space{display:none}#pagination>.pagination>.extend.next:before{content:'下一页'}#pagination>.pagination>.extend.prev:after{content:'上一页'}#pagination>.pagination>.extend{margin:16px 0}#pagination>.pagination>.extend.next{font-weight:600;text-align:right;padding:16px;border-radius:8px;background:var(--card-bg);box-shadow:var(--card-box-shadow)}#pagination>.pagination>.extend.prev{font-weight:600;text-align:right;padding:16px;border-radius:8px;background:var(--card-bg);box-shadow:var(--card-box-shadow)}#pagination>.pagination>.extend:hover{box-shadow:var(--card-hover-box-shadow)}</style><style>#nprogress{pointer-events:none}#nprogress .bar{background:var(--btn-bg);position:fixed;z-index:3000;top:0;left:0;width:100%;height:100%}#nprogress .peg{display:block;position:absolute;right:0;width:100px;height:100%;opacity:1;-webkit-transform:rotate(3deg) translate(0,-4px);-ms-transform:rotate(3deg) translate(0,-4px);transform:rotate(3deg) translate(0,-4px)}#nprogress .spinner{display:block;position:fixed;z-index:3000;top:15px;right:15px}#nprogress .spinner-icon{width:18px;height:18px;box-sizing:border-box;border:solid 2px transparent;border-top-color:#29d;border-left-color:#29d;border-radius:50%;-webkit-animation:nprogress-spinner .4s linear infinite;animation:nprogress-spinner .4s linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}#loading-bar-wrapper{position:fixed;width:100px;top:70px;left:50%;transform:translateX(-50%);height:8px;border-radius:8px;z-index:2000;background:0 0}#loading-bar-wrapper.nprogress-custom-parent{background:var(--color-card);box-shadow:var(--card-box-shadow)}.loading-circle{display:none;height:100%;width:100%;position:fixed;top:0;left:0;z-index:999999;background-color:rgba(250,250,250,.9)}.loading-circle img{width:280px;height:210px;position:relative;top:45%;left:50%;margin-left:-140px;margin-top:-105px}#loader-circle{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#ff5a5a;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}#loader-circle:before{content:"";position:absolute;top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#5af33f;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#loader-circle:after{content:"";position:absolute;top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#6dc9ff;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-webkit-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-o-keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-moz-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}</style><style>#body-wrap #s-top.show.hl{background:var(--hope-button);color:#fff;box-shadow:0 1px 2px 0 rgb(0 0 0/10%)}@media screen and (min-width:768px){#body-wrap #s-top:hover{transform:scale(1.2);border-radius:25%;background:var(--hope-button);color:#fff}}@media screen and (min-width:768px){#body-wrap #s-top:hover,#body-wrap #s-top:hover.hl{box-shadow:0 2px 4px 0 rgb(0 0 0 / 10%),0 4px 8px 0 rgb(0 0 0 / 10%),0 8px 16px 0 rgb(0 0 0 / 10%)}}#body-wrap #s-top.show{transform:translateY(0) scale(1)}#body-wrap #s-top{transition:all .6s ease;-moz-transition:all .6s ease;-webkit-transition:all .6s ease;-o-transition:all .6s ease;z-index:9;position:fixed;width:48px;height:48px;line-height:48px;border-radius:100%;bottom:32px;right:32px;transform:translateY(100px) scale(0);transform-origin:bottom;color:var(--color-text)}#go-up{display:none!important}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hopelight/menu/index.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp" onerror='onerror=null,src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/load.gif"' alt="avatar"></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang1"></i> <span>文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-85px"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian1"></i> <span>文章轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tag"></i> <span>文章标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i> <span>文章分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-icon"></i> <span>生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-85px"><li><a class="site-page child" href="/Dynamic/"><i class="fa-fw iconfont icon-dongtai"></i> <span>动态</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-qinyou"></i> <span>友链</span></a></li><li><a class="site-page child" href="/friends/"><i class="fa-fw iconfont icon-sr_pengyouquan"></i> <span>朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-gengduo"></i> <span>更多</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-35px"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-dianying"></i> <span>追番</span></a></li><li><a class="site-page child" href="/chat/"><i class="fa-fw iconfont icon-jiaoliu"></i> <span>三句交流</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HopeBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i> <span>搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang1"></i> <span>文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-85px"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian1"></i> <span>文章轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tag"></i> <span>文章标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i> <span>文章分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-icon"></i> <span>生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-85px"><li><a class="site-page child" href="/Dynamic/"><i class="fa-fw iconfont icon-dongtai"></i> <span>动态</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-qinyou"></i> <span>友链</span></a></li><li><a class="site-page child" href="/friends/"><i class="fa-fw iconfont icon-sr_pengyouquan"></i> <span>朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-gengduo"></i> <span>更多</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child" style="left:-35px"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-dianying"></i> <span>追番</span></a></li><li><a class="site-page child" href="/chat/"><i class="fa-fw iconfont icon-jiaoliu"></i> <span>三句交流</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">追番列表</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><style>.bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;clear:both;min-height:170px;padding:10px 0;border-bottom:1px solid #ddd}@media screen and (max-width:600px){.bangumi-item{width:100%}}.bangumi-picture{position:absolute;left:0;top:10px;width:110px}.bangumi-info{padding-left:120px}.bangumi-meta{font-size:12px;padding-right:10px}.bangumi-comments{font-size:12px}.bangumi-pagination{margin-top:15px;text-align:center;margin-bottom:10px}.bangumi-button{padding:5px}.bangumi-button:hover{background:#657b83;color:#fff}.bangumi-hide{display:none}.bangumi-show{display:block}.bangumi-title{font-size:18px}.bangumi-title a{line-height:1;text-decoration:none}.bangumi-info-items{font-size:12px;color:#2fd8d8;padding-top:10px;line-height:1;float:left;width:100%}.bangumi-info-item{display:inline-block;width:13%;border-right:1px solid #2fd8d8;text-align:center;height:34px}.bangumi-info-label{display:block;line-height:12px}.bangumi-info-item em{display:block;padding-top:6px;line-height:17px;font-style:normal;font-weight:700}.bangumi-info-total{padding-top:11px;display:block;line-height:12px}.bangumi-info-item-score{border-right:1px solid #0000;width:50px}.bangumi-info-label-em{color:transparent;opacity:0;visibility:hidden;line-height:6px!important;padding:0!important}@media (max-width:650px){.bangumi-coin{display:none}.bangumi-info-item{width:16%}}@media (max-width:590px){.bangumi-danmaku{display:none}.bangumi-info-item{width:19%}}@media (max-width:520px){.bangumi-play{display:none}.bangumi-info-item{width:24%}}@media (max-width:480px){.bangumi-follow{display:none}.bangumi-info-item{width:30%}}@media (max-width:400px){.bangumi-area{display:none}.bangumi-info-item{width:45%}}</style><div class="bangumi-tabs"><a class="bangumi-tab" id="bangumi-tab1" href="javascript:;" rel="external" target="_self" onclick="return!1">想看 (0)</a> <a class="bangumi-tab" id="bangumi-tab2" href="javascript:;" rel="external" target="_self" onclick="return!1">在看 (11)</a> <a class="bangumi-tab" id="bangumi-tab3" href="javascript:;" rel="external" target="_self" onclick="return!1">已看 (0)</a></div><div><div id="bangumi-item1"><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return!1">首页</a> <a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return!1">上一页</a> <span class="bangumi-pagenum">2 / 3</span> <a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return!1">下一页</a> <a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return!1">尾页</a></div></div><div id="bangumi-item2"><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/1c1132fe39bec7d88f62c28d703a095c60b4b072.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231812/">关于我转生变成史莱姆这档事 第二季</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全13话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>1.7 亿</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>805.3 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>118.8 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>120.0 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>9.1</em></span></span></div><div class="bangumi-comments"><br>简介：主人公利姆鲁与仰慕他而聚集的众多魔物们所建立的国家「鸠拉·特恩佩斯特国」，经由与邻国的协议及交易，让「人类与魔物共同漫步的国家」这一温柔的理想逐步成形。 利姆鲁作为曾是人类的史莱姆当然拥有「对人类的...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/2850e7ec13e856a65832f772151a6087fb94e868.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231807/">弱势角色友崎君</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>3488.0 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>175.5 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>27.6 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>40.7 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>9.1</em></span></span></div><div class="bangumi-comments"><br>简介：友崎文也在日本是首屈一指的游戏玩家，但现实中却是个孤僻的高中生。 断言“人生就是垃圾游戏”的他， 遇到了完美的学园女主角·日南葵。 「你要认真地面对『人生』这一游戏！」 人生究竟是垃圾游戏还是神...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/7f08595775a2ed809e21b42d144e69962b9e5f91.jpg@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231928/">2.43清阴高中男子排球社</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>199.2 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>26.8 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>7495</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>1.7 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>8.7</em></span></span></div><div class="bangumi-comments"><br>简介：在东京的初中强豪排球队闹出严重麻烦之后，灰岛公誓搬到了他母亲的故乡福井，在那里与童年时代的朋友黑羽祐仁再会了。 黑羽祐仁具有出色的身体能力，但不善于承受压力，而灰岛公誓拥有对排球压倒性的热情与才能，却...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/f7ef599b52140d77b6e1f09cca3b44646fdf4cb2.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231852/">约定的梦幻岛 第二季</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全11话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>3361.8 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>337.4 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>20.4 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>32.1 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>2.7</em></span></span></div><div class="bangumi-comments"><br>简介：——自由、是多么美丽、而又多么残酷啊。 成功从Grace=Field House逃出的15个孩子。 等待在抛弃虚伪的乐园而勇敢追求自由的他们的面前是、未曾见过的动植物、 以及一路追赶而来的「鬼」……外...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/2a0dc651a4ffca1cfe915dbc7eb2c8c65256813d.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231808/">五等分的新娘∬</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>4713.2 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>430.5 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>62.5 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>55.9 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>9.6</em></span></span></div><div class="bangumi-comments"><br>简介：面对“将要留级”、“讨厌学习”的美少女五姐妹，身为兼职家庭教师的风太郎要指导她们学习，直到“顺利毕业”为止。经历了林间学校中发生的许多事情后，风太郎与五姐妹的信赖进一步加深。 想要在作为家庭教师的事业...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/1830ac3beeb4436645bee4e5d6ab26fc39267d90.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231817/">Ｄｒ．ＳＴＯＮＥ 石纪元 (第二季)</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全11话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>5141.2 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>361.3 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>31.1 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>30.2 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>9.7</em></span></span></div><div class="bangumi-comments"><br>简介：全人类因谜般的现象而在一瞬间石化，之后过了数千年—— 拥有超越人类的头脑，天生的科学少年·千空苏醒了。 面对文明毁灭的石之世界（STONE WORLD）， 千空决定依靠科学的力量取回原本的世界。 他...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/de1dc90a7fb5456a9db09b0e21b1d04e3a1606cb.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231773/">动物狂想曲 / BEASTARS 第二季</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>3701.4 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>359.0 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>33.4 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>40.2 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>9.3</em></span></span></div><div class="bangumi-comments"><br>简介：「我要变得更强。因为我不想输给这个社会和本能。」 雷格西接受了自己食肉动物的身份，并朝着与春的恋情迈进了一步。然而，雷格西本以为自己回到了平静的校园生活，却不知新的危机正在逼近。那就是悬而未决的「食杀...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/18c2bc8245a9f60648b7c8ae6a9a7986a46aeea3.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231926/">苍之骑士团</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>467.5 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>45.2 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>1.5 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>2.5 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>8.5</em></span></span></div><div class="bangumi-comments"><br>简介：位于叶佩特斯半岛，以700年历史而自豪的大国——奥尔坦西亚王国。 王国的丰穰土地受到周边国的觊觎，数次暴露在侵略的威胁之下，但侍奉王国的两大公国——奥利维亚公国和科美利亚公国化作王国的剑和盾，使得王国...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/44495658be4713cb36d830064596748aff82faae.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28229900/">半妖的夜叉姬</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全24话</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>2960.2 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>203.6 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>10.5 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>38.8 万</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>4.8</em></span></span></div><div class="bangumi-comments"><br>简介：永远、刹那、诸叶，是继承了妖怪与人类血脉的半妖少女们。 幼时被卷入森林大火而分离的双胞胎少女，永远与刹那。永远通过能穿越时代树时空的隧道，从战国时代来到了现代。她被戈薇所在的日暮家养育长大，成长为精通...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/cac1699418451387f93572066b7e5d14d799d3cd.jpg@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28233903/">关于我转生变成史莱姆这档事 转生史莱姆日记</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">未完结</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>832.0 万</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>817.8 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>2.0 万</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>4686</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>暂无评分</em></span></span></div><div class="bangumi-comments"><br>简介：美妙的史莱姆人生！ 累计突破50万部的大人气外传四格漫画『转生史莱姆日记』，作为转生史莱姆的外传系列首次TV动画化！ 「因为拿到了贵重的纸，我把至今为止发生的事情以日记形式记录了下来。开头的话就这么...</div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.2.0/lib/img/loading.gif" data-src="https://i0.hdslb.com/bfs/bangumi/image/9d41f705bcace98a4dba4497511c1b77a554a5bd.png@220w_280h.webp" referrerpolicy="no-referrer" width="110"></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28232335/">天空侵犯</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">未完结</span><em class="bangumi-info-label-em">0</em></span> <span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span> <em>日本</em></span> <span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span> <em>-</em></span> <span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">追番人数</span> <em>47.4 万</em></span> <span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币数</span> <em>-</em></span> <span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕总数</span> <em>-</em></span> <span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span> <em>暂无评分</em></span></span></div><div class="bangumi-comments"><br>简介：女高中生·本城游理猛然惊醒时发现自己身处从未见过的楼顶。 她迷失的世界，是有着无数用吊桥连接的高楼大厦的“异常空间”。 迷茫困惑的人们被神秘的“面具人”毫不留情地杀害。 通往地上的阶梯被封锁，想要从...</div></div></div><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return!1">首页</a> <a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return!1">上一页</a> <span class="bangumi-pagenum">2 / 3</span> <a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return!1">下一页</a> <a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return!1">尾页</a></div></div><div id="bangumi-item3"><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return!1">首页</a> <a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return!1">上一页</a> <span class="bangumi-pagenum">2 / 3</span> <a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return!1">下一页</a> <a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return!1">尾页</a></div></div></div><script>"use strict";function tabClick(){this.classList.add("bangumi-active");for(var e=this.siblings(),t=0;t<e.length;t++)e[t].classList.remove("bangumi-active");var a=this.id.replace("tab","item"),s=document.getElementById(a);s.classList.remove("bangumi-hide"),s.classList.add("bangumi-show"),e=document.getElementById(a).siblings();for(var n=0;n<e.length;n++)e[n].classList.remove("bangumi-show"),e[n].classList.add("bangumi-hide")}Element.prototype.siblings=function(){for(var e=[],t=this.parentNode.children,a=0;a<t.length;a++)t[a]!==this&&e.push(t[a]);return e};for(var tabs=document.getElementsByClassName("bangumi-tab"),i=0;i<tabs.length;i++)tabs[i].onclick=tabClick,tabs[i].onclick.apply(tabs[i]);tabs[1].click();var firstpages=document.getElementsByClassName("bangumi-firstpage"),previouspages=document.getElementsByClassName("bangumi-previouspage"),nextpages=document.getElementsByClassName("bangumi-nextpage"),lastpages=document.getElementsByClassName("bangumi-lastpage"),pagenums=document.getElementsByClassName("bangumi-pagenum");function makePageNum(e,t){var a=Math.ceil;return e+1+" / "+a(0==t.length/10?1:a(t.length/10))}function firstBtn(){var e=this.parentNode.siblings();displayPage(e,0),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=makePageNum(0,e)}function previousBtn(){var e=this.parentNode.siblings(),t=this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText;t=t.substr(0,t.indexOf("/")-1),0<(t=parseInt(t,10)-1)&&t--,displayPage(e,t),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=makePageNum(t,e)}function nextBtn(){var e=this.parentNode.siblings(),t=this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText;t=t.substr(0,t.indexOf("/")-1),(t=parseInt(t,10)-1)<Math.ceil(e.length/10)-1&&t++,displayPage(e,t),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=makePageNum(t,e)}function lastBtn(){var e=Math.ceil,t=this.parentNode.siblings();displayPage(t,e(t.length/10)-1),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=makePageNum(-1==e(t.length/10)-1?0:e(t.length/10)-1,t)}function displayPage(e,t){for(var a=0;a<e.length;a++)if(Math.floor(a/10)===t){e[a].classList.remove("bangumi-hide");var s=e[a].getElementsByTagName("img")[0];s.src=s.getAttribute("data-src")}else e[a].classList.add("bangumi-hide")}for(i=0;i<firstpages.length;i++){firstpages[i].onclick=firstBtn,previouspages[i].onclick=previousBtn,nextpages[i].onclick=nextBtn,lastpages[i].onclick=lastBtn;var size=pagenums[i].parentNode.siblings().length;pagenums[i].innerText="1 / "+(0===Math.ceil(size/10)?1:Math.ceil(size/10)),firstpages[i].click()}</script></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i> <span>交流区</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/tx.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/blogfile/load.gif"' alt="avatar"><div class="author-info__name">HopeLight</div><div class="author-info__description"><div class="author-info__description">人生若只如初见，何事秋风悲画扇。等闲变却故人心，却道故心人易变。骊山语罢清宵半，泪雨霖铃终不怨。何如薄幸锦衣郎，比翼连枝当日愿。</div></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/hopedlight" target="_blank" title="Gitee"><i class="iconfont icon-gitee-fill-round"></i></a><a class="social-icon" href="https://music.163.com/#/my/m/music/playlist?id=457599706" target="_blank" title="网易云"><i class="iconfont icon-yinle"></i></a><a class="social-icon" href="https://space.bilibili.com/406771870" target="_blank" title="B站"><i class="iconfont icon-bilibili-line"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"></div><div class="announcement_content"></div><blockquote><p>"如烟往事俱忘却"<br>"心底无私天地宽。<br>--陶铸"</p></blockquote><img src="https://cdn.jsdelivr.net/gh/HopeLight/photo/Label/msg-removebg.png"></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有"><img data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@1.0/background/Hexo.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="Hexo博客搭建的从无到有"></a><div class="content"><a class="title" href="/2021/06/14/HexoAbout/" title="Hexo博客搭建的从无到有">Hexo博客搭建的从无到有</a><time datetime="2021-06-13T22:56:00.000Z" title="发表于 2021-06-14 06:56:00">2021-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上"><img data-lazy-src="https://cdn.jsdelivr.net/gh/HopeLight/photo@3.0/background/Centos.webp" onerror='this.onerror=null,this.src="https://cdn.jsdelivr.net/gh/HopeLight/photo/blog/404.webp"' alt="将Hexo部署到Centos系统上"></a><div class="content"><a class="title" href="/2021/06/07/HexoDeploy/" title="将Hexo部署到Centos系统上">将Hexo部署到Centos系统上</a><time datetime="2021-06-06T22:56:00.000Z" title="发表于 2021-06-07 06:56:00">2021-06-07</time></div></div></div></div><div class="card-widget card-tags"><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size:1.5em;color:#99a9bf">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size:1.5em;color:#99a9bf">博客</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size:1.5em;color:#99a9bf">教程</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size:1.1em;color:#999">服务器</a> <a href="/tags/%E7%8E%AF%E5%A2%83/" style="font-size:1.1em;color:#999">环境</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size:1.1em;color:#999">部署</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">📔文章总数量 :</div><div class="item-count">2个</div></div><div class="webinfo-item"><div class="item-name">📚文章总字数 :</div><div class="item-count">35.6k</div></div><div class="webinfo-item"><div class="item-name">⏰博客运行时间 :</div><div class="item-count" id="runtimeshow" data-publishdate="2021-03-09T16:00:00.000Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="请输入文章关键字" type="text"></div></div></div><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/utils.js"></script><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/HopeLight/Js/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.ranas.cn/',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.ranas.cn/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo@1.4.0-alpha.5/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful=!0,POWERMODE.shake=!1,POWERMODE.mobile=!1,document.body.addEventListener("input",POWERMODE)</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/Dynamic/"]):not([href="/friends/"]):not([href="/categories/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div class="app-refresh" id="app-refresh" style="position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease"><div class="app-refresh-wrap" style="display:flex;color:#fff;height:100%;align-items:center;justify-content:center"><label>HopeBlog 🛫 | 修复了新的BUG 🧳</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color:#fff;text-decoration:underline;cursor:pointer">点击查看新的BUG🛎️</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: 'HopeBlog 🛫 | 修复了新的BUG 🧳',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '点击查看新的BUG🛎️',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#49b1f5' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script></div><script data-pjax>function hope_light_error_killer_injector_config(){var e=document.getElementById("");console.log("已挂载hope_light_error_killer"),e.insertAdjacentHTML("afterbegin","undefined")}document.getElementById("")&&(location.pathname,1)&&hope_light_error_killer_injector_config()</script><script data-pjax>function hope_light_f12_killer_injector_config(){var e=document.getElementById("");console.log("已挂载hope_light_f12_killer"),e.insertAdjacentHTML("afterbegin","undefined")}document.getElementById("")&&(location.pathname,1)&&hope_light_f12_killer_injector_config()</script><script data-pjax>document.onkeydown=function(){window.event&&123==window.event.keyCode&&(event.keyCode=0,event.returnValue=!1,alert("\n干嘛啊,非得要按F12,这样不好的呢~"))},document.oncontextmenu=function(e){window.event&&(e=window.event);try{var n=e.srcElement;return"INPUT"==n.tagName&&"text"==n.type.toLowerCase()||"TEXTAREA"==n.tagName||(alert("\n哎呀,你是不是按错右键下次记得注意点哦！"),!1)}catch(e){return!1}}</script><script data-pjax>function hope_light_footer_injector_config(){var e=document.getElementsByClassName("pagination")[0];console.log("已挂载hope_light_footer"),e.insertAdjacentHTML("afterbegin",'<div id="footer_number"></div>')}document.getElementsByClassName("pagination")[0]&&(location.pathname,1)&&hope_light_footer_injector_config()</script><script data-pjax>if(document.getElementsByClassName("page-number")[document.getElementsByClassName("page-number").length-1]){var all_page_num=document.getElementsByClassName("page-number")[document.getElementsByClassName("page-number").length-1].innerHTML,this_page_num=document.getElementsByClassName("page-number current")[0].innerText,page_number_display=this_page_num+"/"+all_page_num;document.getElementById("footer_number").innerText=page_number_display}</script><script data-pjax>function hope_light_loader_injector_config(){var e=document.getElementById("body-wrap");console.log("已挂载hope_light_loader"),e.insertAdjacentHTML("afterbegin",'<div id="loading-bar-wrapper">')}document.getElementById("body-wrap")&&(location.pathname,1)&&hope_light_loader_injector_config()</script><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed:100})</script><script data-pjax>window.ShowLoading=function(){NProgress.start()},window.HideLoading=function(){NProgress.done()},document.addEventListener("pjax:send",window.ShowLoading),document.addEventListener("pjax:success",window.HideLoading),document.addEventListener("pjax:error",window.HideLoading)</script><script data-pjax>function hope_light_totop_injector_config(){var o=document.getElementById("body-wrap");console.log("已挂载hope_light_totop"),o.insertAdjacentHTML("afterbegin",'<a id="s-top" class="fas fa-arrow-up fa-fw" href="javascript:btf.scrollToDest(0, 500)"></a>')}document.getElementById("body-wrap")&&(location.pathname,1)&&hope_light_totop_injector_config()</script><script data-pjax>window.onscroll=function(){var e=document.documentElement.scrollTop||document.body.scrollTop;document.getElementById("s-top")&&(10<e?document.getElementById("s-top").classList.add("show"):document.getElementById("s-top").classList.remove("show"))};var scrollFunc=function(e){(e=e||window.event).wheelDelta?(0<e.wheelDelta&&document.getElementById("s-top").classList.add("hl"),e.wheelDelta<0&&document.getElementById("s-top").classList.remove("hl")):e.detail&&(0<e.detail&&document.getElementById("s-top").classList.add("hl"),e.detail<0&&document.getElementById("s-top").classList.remove("hl"))};document.addEventListener&&document.addEventListener("DOMMouseScroll",scrollFunc,!1),window.onmousewheel=document.onmousewheel=scrollFunc</script><script data-pjax>function hope_light_menu_injector_config(){var e=document.getElementById("");console.log("已挂载hope_light_menu"),e.insertAdjacentHTML("afterbegin","undefined")}document.getElementById("")&&(location.pathname,1)&&hope_light_menu_injector_config()</script><div class="aplayer-list" style="display:none"><li></li></div><script data-pjax src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script data-pjax>var hopelight_menu_append_div = (parent, text) => {
+    if (typeof text === 'string') {
+        var temp = document.createElement('div');
+        temp.innerHTML = text;
+        // 防止元素太多 进行提速
+        var frag = document.createDocumentFragment();
+        while (temp.firstChild) {
+            frag.appendChild(temp.firstChild);
+        }
+        parent.appendChild(frag);
+    } else {
+        parent.appendChild(text);
+    }
+};
+var  hopelight_switchDarkMode=() => { // Switch Between Light And Dark Mode
+    var darkmode_text = document.getElementById('darkmode_switchbutton_text');
+    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    if (nowMode === 'light') {
+        darkmode_text.innerHTML='开灯';
+        activateDarkMode();
+        saveToLocal.set('theme', 'dark', 2);
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night);
+    } else {
+        darkmode_text.innerHTML='关灯';
+        activateLightMode();
+        saveToLocal.set('theme', 'light', 2);
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day);
+    }
+    // handle some cases
+    typeof utterancesTheme === 'function' && utterancesTheme();
+    typeof FB === 'object' && window.loadFBComment();
+    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200);
+};
+
+var hopelight_nav_bar = document.getElementById('nav');
+var search_button_origin = document.getElementById('search-button');
+search_button_origin.remove();
+var hopelight_temple = `<div id="hopelight_plus_menu" class="hopelight_plus_menu">
+
+<div id="darkmode_navswitch">
+<a class="site-page social-icon darkmode_switchbutton" onclick="hopelight_switchDarkMode()" title="模式切换" data-pjax-state="">
+<i class="fas fa-adjust"></i>
+<span  id = 'darkmode_switchbutton_text'></span>
+</a></div>
+
+<div id="search-button">
+<a class="site-page social-icon search">
+<i class="fas fa-search fa-fw"></i>
+<span id = 'search_text'>搜索</span>
+</a></div>
+<div id="hopelight_menu_music_player">
+<div id="aplayer-uxAIfEUs" 
+class="aplayer aplayer-tag-marker meting-tag-marker" 
+data-id="6808803405" 
+data-lrctype="none" 
+data-server="netease" 
+data-type="playlist" 
+data-mode="circulation" 
+data-autoplay="false" 
+data-mutex="true" 
+data-listmaxheight="340px" 
+data-preload="auto" 
+data-listfolded="true" 
+data-theme="#3F51B5"></div>
+<div class="music_button" id="pre-button">
+<a class="site-page social-icon per" onclick="aplayers[0].skipBack();hopelight_music_play_new()">
+<i class="fas fa-step-backward fa-fw"></i>
+</a></div>
+<div class="music_button" id="play-button" >
+<a class="site-page social-icon hopelight_music_play" onclick="hopelight_music_play()"><i class="fas fa-play fa-fw"></i></a></div>
+<div class="music_button" id="next-button">
+<a class="site-page social-icon next" onclick="aplayers[0].skipForward();hopelight_music_play_new()">
+<i class="fas fa-step-forward fa-fw"></i>
+</a></div>
+</div>
+
+
+</div>`;
+hopelight_menu_append_div(hopelight_nav_bar,hopelight_temple);
+
+window.addEventListener('load', () => {
+  function search (path) {
+    fetch(GLOBAL_CONFIG.root + path)
+      .then(response => response.text())
+      .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+      .then(data => {
+        const datas = [...data.querySelectorAll('entry')].map(function (item) {
+          return {
+            title: item.querySelector('title').textContent,
+            content: item.querySelector('content').textContent,
+            url: item.querySelector('url').textContent
+          }
+        })
+
+        const $input = document.querySelector('#local-search-input input')
+        const $resultContent = document.getElementById('local-search-results')
+        $input.addEventListener('input', function () {
+          let str = '<div class="search-result-list">'
+          const keywords = this.value.trim().toLowerCase().split(/[\s]+/)
+          $resultContent.innerHTML = ''
+          if (this.value.trim().length <= 0) return
+          let count = 0
+          // perform local searching
+          datas.forEach(function (data) {
+            let isMatch = true
+            if (!data.title || data.title.trim() === '') {
+              data.title = 'Untitled'
+            }
+            let dataTitle = data.title.trim().toLowerCase()
+            const dataContent = data.content.trim().replace(/<[^>]+>/g, '').toLowerCase()
+            const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
+            let indexTitle = -1
+            let indexContent = -1
+            let firstOccur = -1
+            // only match artiles with not empty titles and contents
+            if (dataTitle !== '' || dataContent !== '') {
+              keywords.forEach(function (keyword, i) {
+                indexTitle = dataTitle.indexOf(keyword)
+                indexContent = dataContent.indexOf(keyword)
+                if (indexTitle < 0 && indexContent < 0) {
+                  isMatch = false
+                } else {
+                  if (indexContent < 0) {
+                    indexContent = 0
+                  }
+                  if (i === 0) {
+                    firstOccur = indexContent
+                  }
+                }
+              })
+            } else {
+              isMatch = false
+            }
+
+            // show search results
+            if (isMatch) {
+              const content = data.content.trim().replace(/<[^>]+>/g, '')
+              if (firstOccur >= 0) {
+                // cut out 130 characters
+                let start = firstOccur - 30
+                let end = firstOccur + 100
+
+                if (start < 0) {
+                  start = 0
+                }
+
+                if (start === 0) {
+                  end = 100
+                }
+
+                if (end > content.length) {
+                  end = content.length
+                }
+
+                let matchContent = content.substring(start, end)
+
+                // highlight all keywords
+                keywords.forEach(function (keyword) {
+                  const regS = new RegExp(keyword, 'gi')
+                  matchContent = matchContent.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+                  dataTitle = dataTitle.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+                })
+
+                str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
+                count += 1
+
+                if (dataContent !== '') {
+                  str += '<p class="search-result">' + matchContent + '...</p>'
+                }
+              }
+              str += '</div>'
+            }
+          })
+          if (count === 0) {
+            str += '<div id="local-search__hits-empty">' + GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/, this.value.trim()) +
+              '</div>'
+          }
+          str += '</div>'
+          $resultContent.innerHTML = str
+          window.pjax && window.pjax.refresh($resultContent)
+        })
+      })
+  }
+    let loadFlag = false;
+    const openSearch = function () {
+        document.body.style.cssText = 'width: 100%;overflow: hidden';
+        document.querySelector('#local-search .search-dialog').style.display = 'block';
+        document.querySelector('#local-search-input input').focus();
+        btf.fadeIn(document.getElementById('search-mask'), 0.5);
+        if (!loadFlag) {
+            search(GLOBAL_CONFIG.localSearch.path);
+            loadFlag = true;
+        }
+        // shortcut: ESC
+        document.addEventListener('keydown', function f (event) {
+            if (event.code === 'Escape') {
+                closeSearch();
+                document.removeEventListener('keydown', f);
+            }
+        })
+    };
+
+    const closeSearch = function () {
+        document.body.style.cssText = "width: '';overflow: ''";
+        const $searchDialog = document.querySelector('#local-search .search-dialog');
+        $searchDialog.style.animation = 'search_close .5s';
+        setTimeout(() => { $searchDialog.style.cssText = "display: none; animation: ''" }, 500);
+        btf.fadeOut(document.getElementById('search-mask'), 0.5);
+    };
+
+    // click function
+    const searchClickFn = () => {
+        document.querySelector('#search-button > .search').addEventListener('click', openSearch);
+        document.getElementById('search-mask').addEventListener('click', closeSearch);
+        document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch);
+    }
+
+    searchClickFn()
+})
+
+var darkmode_text = document.getElementById('darkmode_switchbutton_text');
+var hopelight_nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+if (hopelight_nowMode === 'light') {
+    darkmode_text.innerHTML='关灯'
+} else {
+    darkmode_text.innerHTML='开灯'
+}
+function hopelight_music_play(){
+    aplayers[0].toggle();
+    if (document.getElementsByClassName('hopelight_music_play')){
+    if (document.getElementsByClassName('hopelight_music_play')[0].innerHTML === '<i class="fas fa-play fa-fw"></i>'){
+        document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-pause fa-fw"></i>';
+        document.getElementsByClassName('aplayer-pic')[0].classList.remove("music_spin_pause");
+         document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin");
+    }else {
+        document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-play fa-fw"></i>';
+        document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin_pause");
+        document.getElementsByClassName('aplayer-pic')[0].classList.remove("music_spin");
+    }
+    }
+    
+
+
+}
+function hopelight_music_play_new(){
+    aplayers[0].play();
+    if (document.getElementsByClassName('hopelight_music_play')){
+    document.getElementsByClassName('aplayer-pic')[0].classList.add("music_spin");
+    document.getElementsByClassName('hopelight_music_play')[0].innerHTML = '<i class="fas fa-pause fa-fw"></i>';
+}}</script></body></html>
